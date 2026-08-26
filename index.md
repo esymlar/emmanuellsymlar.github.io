@@ -1,3 +1,8 @@
+---
+layout: default
+title: Emmanuell Symlar
+---
+
 # Emmanuell Symlar
 
 **Cloud Infrastructure & DevOps Engineer**  
