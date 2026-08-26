@@ -8,14 +8,24 @@
 </head>
 
 <body>
-    <nav class="topnav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="experience.html">Experience</a>
-    <a href="contact.html">Contact</a>
+<nav class="topnav">
+    <div class="nav-left">
+        <a href="index.html" class="brand">ES</a>
+    </div>
+
+    <div class="nav-right" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
 </nav>
+
 
     <header class="hero">
         <h1>Emmanuell Symlar</h1>
