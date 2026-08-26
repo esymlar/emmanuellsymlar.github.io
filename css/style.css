@@ -1,11 +1,39 @@
+/* ===========================
+   BASE THEME VARIABLES
+   =========================== */
+:root {
+    --bg: #f5f5f5;
+    --text: #222;
+    --accent: #0077ff;
+    --accent-hover: #00c896;
+    --nav-bg: #ffffff;
+    --border: #e0e0e0;
+}
+
+.dark-mode {
+    --bg: #121212;
+    --text: #eaeaea;
+    --accent: #00c896;
+    --accent-hover: #0077ff;
+    --nav-bg: #1e1e1e;
+    --border: #333;
+}
+
+/* ===========================
+   GLOBAL STYLES
+   =========================== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
-    color: #222;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* ===========================
+   HERO SECTION
+   =========================== */
 .hero {
     background: linear-gradient(135deg, #0077ff, #00c896);
     color: white;
@@ -24,6 +52,9 @@ body {
     font-weight: 300;
 }
 
+/* ===========================
+   INTRO SECTION
+   =========================== */
 .intro {
     max-width: 800px;
     margin: 40px auto;
@@ -32,50 +63,94 @@ body {
     text-align: center;
 }
 
-.nav {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.nav a {
-    margin: 0 15px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #0077ff;
-}
-
-.links {
-    text-align: center;
-    margin: 40px 0;
-}
-
+/* ===========================
+   BUTTONS
+   =========================== */
 .btn {
     display: inline-block;
     margin: 10px;
     padding: 12px 20px;
-    background: #0077ff;
+    background: var(--accent);
     color: white;
     text-decoration: none;
     border-radius: 6px;
 }
+
+.btn:hover {
+    background: var(--accent-hover);
+}
+
+/* ===========================
+   TOP NAVIGATION (DESKTOP)
+   =========================== */
 .topnav {
-    background: #ffffff;
+    background: var(--nav-bg);
     padding: 12px 20px;
-    text-align: center;
-    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.topnav a {
+.nav-left .brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.nav-right a {
     margin: 0 15px;
     text-decoration: none;
-    color: #0077ff;
+    color: var(--accent);
     font-size: 18px;
     font-weight: 500;
 }
 
-.topnav a:hover {
-    color: #00c896;
+.nav-right a:hover {
+    color: var(--accent-hover);
+}
+
+/* ===========================
+   NAV BUTTONS
+   =========================== */
+.menu-btn,
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: var(--accent);
+}
+
+.menu-btn:hover,
+.theme-btn:hover {
+    color: var(--accent-hover);
+}
+
+/* ===========================
+   MOBILE MENU
+   =========================== */
+@media (max-width: 768px) {
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: var(--nav-bg);
+        padding: 20px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-right a {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
 }
