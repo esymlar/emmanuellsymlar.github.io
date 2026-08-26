@@ -1,3 +1,9 @@
 title: "Emmanuell Symlar"
 description: "Cloud Infrastructure & DevOps Engineer"
 theme: jekyll-theme-cayman
+
+markdown: kramdown
+show_downloads: false
+
+github:
+  is_project_page: false
