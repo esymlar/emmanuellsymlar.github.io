@@ -58,3 +58,24 @@ body {
     text-decoration: none;
     border-radius: 6px;
 }
+.topnav {
+    background: #ffffff;
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topnav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0077ff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.topnav a:hover {
+    color: #00c896;
+}
