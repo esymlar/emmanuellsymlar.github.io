@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0077ff, #00c896);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.hero h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 40px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.nav a {
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #0077ff;
+}
+
+.links {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background: #0077ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
